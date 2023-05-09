@@ -1,0 +1,11 @@
+// Get a reference to the canvas element and its 2D context
+const canvas = document.getElementById("gameCanvas");
+const ctx = canvas.getContext("2d");
+
+// Load the sprite image
+const sprite = new Image();
+sprite.src = "path/to/your/sprite.png";
+sprite.onload = () => {
+  // Draw the sprite on the canvas
+  ctx.drawImage(sprite, 0, 0, sprite.width, sprite.height);
+};
